@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+#top_row {
+    overflow-y: hidden;
+    text-align: center;
+}
+#bottom_row {
+    background-color: #616161;
+}
+h1 {
+    color: white;
+}
+h6 {
+    color: white;
+}
+.material-icons {
+    display:inline-flex;
+    vertical-align:top;
+    color: #e0f7fa;
+}
+#button {
+    color: #e0f7fa;
+    background-color: #616161;
+    font-size: smaller;
+}
+iframe {
+    width: 100%;
+}

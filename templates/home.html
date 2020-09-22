@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel = "stylesheet" type = "text/css" href = "{{url_for('static', filename='style.css')}}"/>
+    <title>Snowflake Editor</title>
+</head>
+<body>
+    <div class = "row">
+        <div id = "top_row" class="col s12">
+            <h1>Snowflake Editor</h1>
+        </div>
+    </div>
+
+    <div class="row" id = "button_row">
+        <div class="col s2 offset-s2">
+            <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">cloud_upload</i><span> upload file</span></a>
+        </div>
+        <div class="col s2">
+            <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">cloud_download</i><span> download file</span></a>
+        </div>
+        <div class="col s2">
+            <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">preview</i><span> preview text</span></a>
+        </div>
+        <div class="col s2">
+            <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">view_carousel</i><span> view cards</span></a>
+        </div>
+    </div>
+
+    <div class="row" id = "contents">
+        <div class="col s10 offset-s1">
+            <iframe src="https://www.tinywebgallery.com/blog/advanced-iframe/free-iframe-checker" title="W3Schools Free Online Web Tutorials"></iframe> 
+        </div>
+    </div>
+
+    <div class="row" id = "bottom_row">
+        <div class="col s12">
+            <h6>This app was created by Laura Siepman (<a href="https://github.com/lsiepman/SnowflakeEditor">GitHub repository</a>)</h6>
+        </div>
+    </div>
+
+</body>
+</html>
