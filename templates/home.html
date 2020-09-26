@@ -16,38 +16,47 @@
     <title>Snowflake Editor</title>
 </head>
 <body>
-    <div class = "row">
-        <div id = "top_row" class="col s12">
-            <h1>Snowflake Editor</h1>
+    <header>
+        <div class = "row">
+            <div id = "top_row" class="col s12">
+                <h1>Snowflake Editor</h1>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <div class="row" id = "button_row">
-        <div class="col s2 offset-s2">
-            <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">cloud_upload</i><span> upload file</span></a>
-        </div>
-        <div class="col s2">
-            <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">cloud_download</i><span> download file</span></a>
-        </div>
-        <div class="col s2">
-            <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">preview</i><span> preview text</span></a>
-        </div>
-        <div class="col s2">
-            <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">view_carousel</i><span> view cards</span></a>
-        </div>
-    </div>
+    <main>
 
-    <div class="row" id = "contents">
-        <div class="col s10 offset-s1">
-            <iframe src="https://www.tinywebgallery.com/blog/advanced-iframe/free-iframe-checker" title="W3Schools Free Online Web Tutorials"></iframe> 
+        <div class="row" id = "button_row">
+            <div class="col s2 offset-s1">
+                <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">cloud_upload</i><span> upload file</span></a>
+            </div>
+            <div class="col s2">
+                <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">help</i><span> instructions</span></a>
+            </div>
+            <div class="col s2">
+                <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">article</i><span> preview text</span></a>
+            </div>
+            <div class="col s2">
+                <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">view_carousel</i><span> view cards</span></a>
+            </div>
+            <div class="col s2">
+                <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">group</i><span> view characters</span></a>
+            </div>
         </div>
-    </div>
+    
+        
+        <div class="row" id = "contents">
+            <div class="col s10 offset-s1">
+                <iframe src= "landing_iframe.html" title="placeholder"></iframe> 
+            </div>
+        </div>
+    </main>
 
-    <div class="row" id = "bottom_row">
-        <div class="col s12">
-            <h6>This app was created by Laura Siepman (<a href="https://github.com/lsiepman/SnowflakeEditor">GitHub repository</a>)</h6>
+    <footer class="page-footer">
+        <div class="col s12" id = "middle-footer">
+                <h6 class="center-align">This app was created by Laura Siepman (<a href="https://github.com/lsiepman/SnowflakeEditor">GitHub repository</a>)</h6>
         </div>
-    </div>
+    </footer>
 
 </body>
 </html>

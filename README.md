@@ -8,6 +8,10 @@ As a developer, I am more interested in developing my version of the software th
 
 ## Progress Tracker
 
+### 2020-09-26
+- Finished home page template file.
+
 ### 2020-09-20
 - Created the basic folder structure and files
 - Started on the template html
+

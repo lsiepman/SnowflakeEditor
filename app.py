@@ -14,6 +14,9 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
+@app.route('/landing_iframe.html')
+def landing_iframe():
+    return render_template('landing_iframe.html')
 
 if __name__ == '__main__':
     app.run()
