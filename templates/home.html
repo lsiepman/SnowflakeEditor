@@ -47,7 +47,17 @@
         
         <div class="row" id = "contents">
             <div class="col s10 offset-s1">
-                <iframe src= "landing_iframe.html" title="placeholder"></iframe> 
+                {% if iframe == "landing_iframe" %}
+                <iframe src= "previews/landing_iframe.html" title="Landing page"></iframe>
+                {% elif iframe == "cards" %}
+                <iframe src= "previews/cards.html" title="Preview cards"></iframe> 
+                {% elif iframe == "characters" %}
+                <iframe src= "previews/characters.html" title="Preview characters"></iframe>
+                {% elif iframe == "instructions" %}
+                <iframe src= "previews/instructions.html" title="View instructions"></iframe>
+                {% elif iframe == "text" %}
+                <iframe src= "previews/text.html" title="Preview text"></iframe>
+                {% endif %}
             </div>
         </div>
     </main>
