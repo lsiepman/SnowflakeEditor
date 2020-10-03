@@ -8,14 +8,18 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel = "stylesheet" type = "text/css" href = "{{url_for('static', filename='style.css')}}"/>
     <title>Snowflake Editor</title>
+    
+    
 </head>
 <body>
+    
     <header>
         <div class = "row">
             <div id = "top_row" class="col s12">
@@ -23,50 +27,42 @@
             </div>
         </div>
     </header>
-
+    
     <main>
-
+        
         <div class="row" id = "button_row">
             <div class="col s2 offset-s1">
-                <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">cloud_upload</i><span> upload file</span></a>
+                <a class="waves-effect waves-light btn" id = "button_upload"><i class="material-icons">cloud_upload</i><span> upload file</span></a>
             </div>
             <div class="col s2">
-                <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">help</i><span> instructions</span></a>
+                <a class="waves-effect waves-light btn" id = "button_preview_instructions" onclick="showPreviewPage(id)"><i class="material-icons">help</i><span> instructions</span></a>
             </div>
             <div class="col s2">
-                <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">article</i><span> preview text</span></a>
+                <a class="waves-effect waves-light btn" id = "button_preview_text" onclick="showPreviewPage(id)"><i class="material-icons">article</i><span> preview text</span></a>
             </div>
             <div class="col s2">
-                <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">view_carousel</i><span> view cards</span></a>
+                <a class="waves-effect waves-light btn" id = "button_preview_cards" onclick="showPreviewPage(id)"><i class="material-icons">view_carousel</i><span> view cards</span></a>
             </div>
             <div class="col s2">
-                <a class="waves-effect waves-light btn" id = "button"><i class="material-icons">group</i><span> view characters</span></a>
+                <a class="waves-effect waves-light btn" id = "button_preview_characters" onclick="showPreviewPage(id)"><i class="material-icons">group</i><span> view characters</span></a>
             </div>
         </div>
-    
+        
         
         <div class="row" id = "contents">
             <div class="col s10 offset-s1">
-                {% if iframe == "landing_iframe" %}
-                <iframe src= "previews/landing_iframe.html" title="Landing page"></iframe>
-                {% elif iframe == "cards" %}
-                <iframe src= "previews/cards.html" title="Preview cards"></iframe> 
-                {% elif iframe == "characters" %}
-                <iframe src= "previews/characters.html" title="Preview characters"></iframe>
-                {% elif iframe == "instructions" %}
-                <iframe src= "previews/instructions.html" title="View instructions"></iframe>
-                {% elif iframe == "text" %}
-                <iframe src= "previews/text.html" title="Preview text"></iframe>
-                {% endif %}
+                <iframe id = "iframe_id" src= "previews/landing_iframe.html"></iframe>
             </div>
         </div>
     </main>
-
+    
     <footer class="page-footer">
         <div class="col s12" id = "middle-footer">
-                <h6 class="center-align">This app was created by Laura Siepman (<a href="https://github.com/lsiepman/SnowflakeEditor">GitHub repository</a>)</h6>
+            <h6 class="center-align">This app was created by Laura Siepman (<a href="https://github.com/lsiepman/SnowflakeEditor">GitHub repository</a>)</h6>
         </div>
     </footer>
-
+    
+    <!-- Necessary Javascript -->
+    <script type="text/javascript" src="{{ url_for('static', filename='home.js') }}"></script>
 </body>
 </html>

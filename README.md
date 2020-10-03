@@ -8,6 +8,10 @@ As a developer, I am more interested in developing my version of the software th
 
 ## Progress Tracker
 
+### 2020-10-03
+- Created functional buttons for the previes pages.
+- Keep in mind that the upload file button still doesn't do anything.
+
 ### 2020-09-26
 - Finished home page template file.
 

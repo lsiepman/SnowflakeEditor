@@ -11,8 +11,8 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def home(iframe="landing_iframe"):
-    return render_template("home.html", iframe = iframe)
+def home():
+    return render_template("home.html")
 
 @app.route('/previews/landing_iframe.html')
 def landing_iframe():

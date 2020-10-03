@@ -27,7 +27,11 @@ h1, h2, h6 {
     vertical-align:top;
     color: #e0f7fa;
 }
-#button {
+#button_upload,
+#button_preview_instructions,
+#button_preview_text,
+#button_preview_cards,
+#button_preview_characters {
     color: #e0f7fa;
     background-color: #616161;
     font-size: smaller;
