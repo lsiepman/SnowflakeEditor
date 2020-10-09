@@ -34,5 +34,9 @@ def preview_text():
 def instructions():
     return render_template("/previews/instructions.html")
 
+@app.route("/cards")
+def cards(card_list):
+    return render_template("/cards.html", card_list=card_list)
+
 if __name__ == "__main__":
     app.run()

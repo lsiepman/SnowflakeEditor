@@ -1,5 +1,3 @@
-
-
 showPreviewPage = function(input) {
     var index = input.lastIndexOf("_");
     var result = input.substr(index+1);

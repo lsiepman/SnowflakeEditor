@@ -31,7 +31,8 @@ h1, h2, h6 {
 #button_preview_instructions,
 #button_preview_text,
 #button_preview_cards,
-#button_preview_characters {
+#button_preview_characters,
+#button_cards {
     color: #e0f7fa;
     background-color: #616161;
     font-size: smaller;
